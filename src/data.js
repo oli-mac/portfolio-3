@@ -1,32 +1,33 @@
 export const products = [
     {
       id: 1,
-      img: "p1.jpg",
+      img: "https://olyadmulugeta.me/static/media/possibility.525f13b6.png",
       link: "http://olyadmulugeta.me",
     },
     {
       id: 2,
-      img: 'p2.jpg',
+      img: "https://olyadmulugeta.me/static/media/possibility.525f13b6.png",
       link: "http://olyadmulugeta.me",
     },
     {
       id: 3,
-      img: "./images/p3.jpg",
+      img: "https://olyadmulugeta.me/static/media/possibility.525f13b6.png",
       link: "http://olyadmulugeta.me",
     },
     {
       id: 4,
-      img: "./images/p4.jpg",
+      img: "https://olyadmulugeta.me/static/media/ai.aa60586b.png",
       link: "http://olyadmulugeta.me",
     },
     {
       id: 5,
-      img: "./images/p5.jpg",
+      img: "https://olyadmulugeta.me/static/media/ai.aa60586b.png",
       link: "http://olyadmulugeta.me",
     },
     {
       id: 6,
-      img: "./images/p1.jpg",
+      img: "https://olyadmulugeta.me/static/media/ai.aa60586b.png",
       link: "http://olyadmulugeta.me",
     },
-  ];
+];
+export default products; 
