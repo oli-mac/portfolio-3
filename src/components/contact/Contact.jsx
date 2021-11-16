@@ -2,12 +2,18 @@ import './contact.css'
 import phone from "../../images/phone.png"
 import email from "../../images/email.png"
 import address from "../../images/address.png"
-import { useRef, useState } from 'react'
+import { useContext, useRef, useState } from 'react'
 import emailjs from 'emailjs-com';
+import { ThemeContext } from '../../context'
 
 const Contact = () => {
     const formRef = useRef();
     const [done, setDone] = useState(false)
+
+    const theme = useContext(ThemeContext);
+    const darkMode= theme.state.darkMode;
+
+
     const hundelSubmit = (e)=>{
         e.preventDefault();
         emailjs
@@ -52,10 +58,10 @@ const Contact = () => {
                         freelancing if the right project comes along.
                     </p>
                     <form ref={formRef} onSubmit={hundelSubmit}>
-                        <input type="text" placeholder="Name" name="user_name"/>
-                        <input type="text" placeholder="Subject" name="user_subject"/>
-                        <input type="email" placeholder="Email" name="user_email"/>
-                        <textarea name="message" rows="5" placeholder="Message"></textarea>
+                        <input style={{backgroundColor: darkMode && "#333"}}type="text" placeholder="Name" name="user_name"/>
+                        <input style={{backgroundColor: darkMode && "#333"}}type="text" placeholder="Subject" name="user_subject"/>
+                        <input style={{backgroundColor: darkMode && "#333"}}type="email" placeholder="Email" name="user_email"/>
+                        <textarea style={{backgroundColor: darkMode && "#333",border:"none"}}name="message" rows="5" placeholder="Message"></textarea>
                         <button >Submit</button>
                         {done && "Thank You i will get back to you"}
                     </form>
