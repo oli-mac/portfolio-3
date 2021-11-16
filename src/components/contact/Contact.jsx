@@ -58,9 +58,9 @@ const Contact = () => {
                         freelancing if the right project comes along.
                     </p>
                     <form ref={formRef} onSubmit={hundelSubmit}>
-                        <input style={{backgroundColor: darkMode && "#333"}}type="text" placeholder="Name" name="user_name"/>
-                        <input style={{backgroundColor: darkMode && "#333"}}type="text" placeholder="Subject" name="user_subject"/>
-                        <input style={{backgroundColor: darkMode && "#333"}}type="email" placeholder="Email" name="user_email"/>
+                        <input style={{backgroundColor: darkMode && "#333"}}type="text" placeholder="Name" name="user_name" required/>
+                        <input style={{backgroundColor: darkMode && "#333"}}type="text" placeholder="Subject" name="user_subject" required/>
+                        <input style={{backgroundColor: darkMode && "#333"}}type="email" placeholder="Email" name="user_email" required/>
                         <textarea style={{backgroundColor: darkMode && "#333",border: darkMode && "none"}}name="message" rows="5" placeholder="Message"></textarea>
                         <button >Submit</button>
                         {done && "Thank You i will get back to you"}

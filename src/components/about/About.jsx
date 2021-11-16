@@ -25,7 +25,7 @@ const About = () => {
                     Imagining things came easy to me, it was like my second nature.
                     I have been designing websites as early as I could. I worked hard and long. 
                 </p>
-                <p className="a-desc">
+                <p className="a-desc hid">
                     Through learning and experience I have become an expert in software development process.
                     I give all my time and energy to give a better service.
                     I thrive to be the best software development manager I know I can be.

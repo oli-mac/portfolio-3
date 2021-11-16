@@ -47,6 +47,7 @@
     font-weight: 300;
     font-size: 15px;
 }
+
 .a-award{
     margin-top: 50px;
     display: flex;
@@ -93,5 +94,8 @@
 
     .a-right{
       padding: 20px;
+    }
+    .hid{
+        display: none;
     }
 }
