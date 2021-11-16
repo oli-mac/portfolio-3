@@ -22,7 +22,7 @@
 }
 .a-card{
     width: 60%;
-    height: 70vh;
+    height: 80vh;
     border-radius: 30px;
     position: relative;
     overflow: hidden;
@@ -45,6 +45,7 @@
 }
 .a-desc{
     font-weight: 300;
+    font-size: 15px;
 }
 .a-award{
     margin-top: 50px;
@@ -60,7 +61,17 @@
     color: #555;
     margin-bottom: 10px;
 }
-
+.a-award-desc{
+    padding-bottom: 10px;
+}
+.a-button{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.a-button:hover{
+    color: #59b256;
+}
 @media screen and (max-width:480px) {
     .a{
       flex-direction: column;

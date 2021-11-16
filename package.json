@@ -1,6 +1,5 @@
 {
   "name": "new",
-  "homepage":"http://olyadmulugeta.me"
   "version": "0.1.0",
   "private": true,
   "dependencies": {
