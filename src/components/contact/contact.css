@@ -81,6 +81,9 @@ button:hover{
 
 
 @media screen and (max-width: 480px) {
+    /* .c{
+        height: 90vh;
+    } */
     .c-wrapper {
       flex-direction: column;
       padding: 0px 50px;
@@ -116,3 +119,8 @@ button:hover{
       margin-top: 10px;
     }
 }  
+@media screen and (max-width: 280px) {
+    .c-title {
+        font-size: 25px;
+    }
+}

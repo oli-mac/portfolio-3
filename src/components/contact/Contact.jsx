@@ -48,7 +48,7 @@ const Contact = () => {
                         </div>
                         <div className="c-info-item">
                             <img src={address} alt="" className="c-icon" />
-                            Adis Abeba, Ethiopia
+                            Addis Ababa, Ethiopia
                         </div>
                     </div>
                 </div>
@@ -62,10 +62,10 @@ const Contact = () => {
                         <input style={{backgroundColor: darkMode && "#333"}}type="text" placeholder="Subject" name="user_subject" required/>
                         <input style={{backgroundColor: darkMode && "#333"}}type="email" placeholder="Email" name="user_email" required/>
                         <textarea style={{backgroundColor: darkMode && "#333",border: darkMode && "none"}}name="message" rows="5" placeholder="Message"></textarea>
-                        <button >Submit</button>
-                        {done && "Thank You i will get back to you"}
-                    </form>
-                </div>
+                        <button >Submit</button><p className="c-thank">{done && (alert("Thank You i will get back to you as soon as i can.")?"" : window.location.reload())}</p>
+                        
+                    </form>  
+                </div> 
             </div>
         </div>
     )
